@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevBoard</title>
+    <link rel="shortcut icon" href="./assets/logo.png" type="image/x-icon">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="https://kit.fontawesome.com/7cb9b40a21.js" crossorigin="anonymous"></script>
+</head>
+<body class="w-[95vw]  mx-auto ">
+    <header>
+        <nav>
+            <div class="flex justify-between rounded-md bg-[#f5d6d6] py-3 px-6 ">
+                <div class="flex gap-2 items-center">
+                    <img class="w-10" src="./assets/logo.png" alt="">
+                    <h1 class="text-2xl">Dev<span class="font-bold">Board</span></h1>
+                </div>
+                <div class="flex gap-8 items-center">
+                    <div class="flex gap-2 items-center">
+                        <button><img class="w-6" src="./assets/checkbox.png"></button>
+                        <p class="text-2xl font-bold">23</p>
+                    </div>
+                    <div class="flex items-center">
+                        <button><img src="./assets/theme-btn.png"></button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <section class="mt-8">
+            <div>
+                <div class="flex items-center gap-10">
+                    <img class="w-6" src="./assets/checkbox.png">
+                    <div>
+                        <h3 class="text-lg text-[#00303C]">Task Assigned</h3>
+                        <p class="text-2xl font-bold">05</p>
+                    </div>
+                    <div class="flex gap-8 pl-6 py-3 rounded-md items-center w-96 bg-gradient-to-r from-[#6C7FFA] to-[#9BA8F8]">
+                        <img class="w-16" src="./assets/board.png">
+                        <p class="text-xl font-semibold text-[#FFFFFF]">Discover Something <br> New Today!</p>
+                    </div>
+                    <div class="flex items-center gap-3">
+                        <img src="./assets/calender.png">
+                        <div class="date-container">
+                            <h2 id="day" class="text-xl font-normal">DAY</h2>
+                            <h1 id="date" class="text-xl font-semibold">YEAR</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </header>
+    
+</body>
+</html>
