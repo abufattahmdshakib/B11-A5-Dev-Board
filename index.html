@@ -13,7 +13,7 @@
 <body class="w-[95vw] bg-yellow-100 mx-auto ">
     <header>
         <nav>
-            <div class="flex justify-between rounded-md bg-[#f5d6d6] py-3 px-6 ">
+            <div class="flex justify-between rounded-md bg-white py-3 px-6 ">
                 <div class="flex gap-2 items-center">
                     <img class="w-10" src="./assets/logo.png" alt="">
                     <h1 class="text-2xl">Dev<span class="font-bold">Board</span></h1>
@@ -21,7 +21,7 @@
                 <div class="flex gap-8 items-center">
                     <div class="flex gap-2 items-center">
                         <img class="w-6" src="./assets/checkbox.png">
-                        <p class="text-2xl font-bold">23</p>
+                        <p id="nav-devboard-count" class="text-2xl font-bold">23</p>
                     </div>
                     <div class="flex items-center">
                         <img src="./assets/theme-btn.png">
@@ -32,13 +32,13 @@
 
         <section>
             <div class="h-screen grid grid-cols-12 grid-rows-10 mb-32 mt-6 gap-2">
-                <div class="flex justify-between bg-red-300 rounded-md pl-4 pr-4 row-span-2 col-span-9  items-center gap-10">
+                <div class="flex justify-between bg-white rounded-md pl-4 pr-4 row-span-2 col-span-9  items-center gap-10">
                     
                     <div class="flex items-center gap-5">
                         <div><img class="w-6" src="./assets/checkbox.png"></div>
                        <div>
                         <h3 class="text-lg text-[#00303C]">Task Assigned</h3>
-                        <p class="text-2xl font-bold">05</p>
+                        <p id="Assigned-value" class="text-2xl font-bold">6</p>
                        </div>
                     </div>
                     <div class="flex gap-8 pl-6 py-4 rounded-md items-center w-1/2 bg-gradient-to-r from-[#3752FD] to-[#9BA8F8]">
@@ -56,10 +56,10 @@
 
 
 
-                <div class="col-span-3 px-24 mx-auto row-span-10 border-2">
+                <div class="col-span-3 bg-white px-24 mx-auto row-span-10">
                     <div class="flex mt-6 items-center gap-3">
                         <img src="./assets/activity.png">
-                        <h1 class="text-xl overflow-scroll overflow-x-hidden font-medium">Activity Log</h1>
+                        <h1 class="text-xl font-medium">Activity Log</h1>
                     </div>
                     <button class="bg-[#3752FD]  w-44 py-2 mt-6 rounded-xl text-xl font-normal text-white">Clear History</button>
                 </div>
@@ -68,10 +68,10 @@
 
 
                 <div class="grid grid-cols-3 col-span-9 row-span-3 gap-4">
-                    <div class="w-[346px] bg-red-200 rounded-lg shadow-2xl">
+                    <div id="shopEase-card" class="w-[346px] bg-white rounded-lg shadow-2xl">
                         <h4 class="text-lg font-normal pl-3 mt-3">ShopEase</h4>
                         <h2 class="text-2xl font-semibold pl-2 mt-1">Fix Mobile Button Issue </h2>
-                        <p class="pl-2 mt-1">Debug using Chrome DevTools, check for overlapping elements, and ensure
+                        <p class="pl-2  px-3 mt-1">Debug using Chrome DevTools, check for overlapping elements, and ensure
                             onClick works properly
                             and ensure onClick works properly.</p>
                         <div class="flex  justify-between px-2 mt-5 mb-5">
@@ -79,11 +79,10 @@
                                 <h4 class="text-lg">Deadline</h4>
                                 <h3 class="text-xl font-semibold">21 March 2025</h3>
                             </div>
-                            <button
-                                class="bg-[#3752FD]  w-32 rounded-xl text-xl font-normal text-white">Completed</button>
+                            <button id="shopEase-card-btn" class="bg-[#3752FD]  w-32 rounded-xl text-xl font-normal text-white">Completed</button>
                         </div>
                     </div>
-                    <div class="w-[346px] bg-red-200 rounded-lg shadow-2xl">
+                    <div class="w-[346px] bg-white rounded-lg shadow-2xl">
                         <h4 class="text-lg font-normal pl-3 mt-3">CloudSync</h4>
                         <h2 class="text-2xl font-semibold pl-2 mt-1">Add Dark Mode</h2>
                         <p class="pl-2 mt-1">Store the user's preference in localStorage, update CSS variables dynamically, and apply a smooth transition effect.</p>
@@ -96,7 +95,7 @@
                                 class="bg-[#3752FD] w-32 rounded-xl text-xl font-normal text-white">Completed</button>
                         </div>
                     </div>
-                    <div class="w-[346px] bg-red-200 rounded-lg shadow-2xl">
+                    <div class="w-[346px] bg-white rounded-lg shadow-2xl">
                         <h4 class="text-lg font-normal pl-3 mt-3">SwiftPay</h4>
                         <h2 class="text-2xl font-semibold pl-2 mt-1">Optimize  Home page</h2>
                         <p class="pl-2 mt-1">Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly
@@ -110,7 +109,7 @@
                                 class="bg-[#3752FD] w-32 rounded-xl text-xl font-normal text-white">Completed</button>
                         </div>
                     </div>
-                    <div class="w-[346px] bg-red-200 rounded-lg shadow-2xl">
+                    <div class="w-[346px] bg-white rounded-lg shadow-2xl">
                         <h4 class="text-lg font-normal pl-3 mt-3">Meta</h4>
                         <h2 class="text-2xl font-semibold pl-2 mt-1">Add new emoji 🤲 </h2>
                         <p class="pl-2 mt-1">Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly
@@ -124,7 +123,7 @@
                                 class="bg-[#3752FD] w-32 rounded-xl text-xl font-normal text-white">Completed</button>
                         </div>
                     </div>
-                    <div class="w-[346px] bg-red-200 rounded-lg shadow-2xl">
+                    <div class="w-[346px] bg-white rounded-lg shadow-2xl">
                         <h4 class="text-lg font-normal pl-3 mt-3">Google LLC</h4>
                         <h2 class="text-2xl font-semibold pl-2 mt-1">Integrate OpenAI API </h2>
                         <p class="pl-2 mt-1">Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly
@@ -138,7 +137,7 @@
                                 class="bg-[#3752FD] w-32 rounded-xl text-xl font-normal text-white">Completed</button>
                         </div>
                     </div>
-                    <div class="w-[346px] bg-red-200 rounded-lg shadow-2xl">
+                    <div class="w-[346px] bg-white rounded-lg shadow-2xl">
                         <h4 class="text-lg font-normal pl-3 mt-3">Glassdoar</h4>
                         <h2 class="text-2xl font-semibold pl-2 mt-1">Improve Job searching </h2>
                         <p class="pl-2 mt-1">Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly
@@ -157,7 +156,9 @@
             </div>
         </section>
     </header>
-    <script src="./devboard.js/livedaydate.js"></script>
+    <script src="./utilites/utilites.js"></script>
+    <script src="./devboard/livedaydate.js"></script>
+    <script src="./devboard/devboard.js"></script>
 </body>
 
 </html>
