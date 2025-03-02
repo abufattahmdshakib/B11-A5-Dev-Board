@@ -28,7 +28,7 @@
         </nav>
     </header>
     <main class="w-[85vw] mx-auto  rounded-xl mb-5">
-        <!-- title -->
+        <!--Blogs title -->
         <h1 class="text-center text-2xl font-bold">Blogs</h1>
 
         <!--  Question-1 -->
@@ -37,10 +37,10 @@
                 Question-1: What are the different ways to select an element in the DOM?
             </h1>
             <p class="pt-3  p-4 font-medium opacity-50 pr-20">
-                There are several ways to select an element in the DOM. The most common method is getElementById(),
-                which selects an element using its unique ID. Another approach is getElementsByClassName(), which
-                retrieves all elements with a specific class name. Similarly, getElementsByTagName() selects elements
-                based on their tag names.
+                the different ways to select an element in the DOM is getElementById(): Select by ID (unique).
+                getElementsByClassName(): Select by class (returns multiple).getElementsByTagName(): Select by tag name
+                (returns multiple).querySelector(): Select the first element matching a CSS selector.querySelectorAll():
+                Select all elements matching a CSS selector.
             </p>
         </div>
 
@@ -51,9 +51,8 @@
                 Question-2: What is the difference between innerHTML, innerText, and textContent ?
             </h1>
             <p class="pt-3  p-4 font-medium opacity-50 pr-20">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus repellat est dolor, esse quia libero
-                quam blanditiis consequatur minus nostrum nisi placeat odit aliquam dolorem deleniti dignissimos enim
-                laborum perspiciatis.
+            The properties innerHTML, innerText, and textContent are all used to access or modify the content of an
+            element in the DOM, but they behave differently in terms of how they handle the content.innerHTML:'<p>Hello <strong>world</strong>!</p>'(includes the HTML tags).innerText: "Hello world!" (only visible  text,ignoring HTML tags).textContent: 'Hello world!' (raw text, no HTML tags, includes hidden text if any).
             </p>
         </div>
 
@@ -61,12 +60,10 @@
         <!--  Question-3 -->
         <div class="mt-6 bg-white rounded-xl">
             <h1 class="font-bold pb-3 border-b-1 border-dashed border-gray-300 p-4 ">
-                Question-1: What are the different ways to select an element in the DOM?
+                Question-3: What is event delegation in the DOM?
             </h1>
             <p class="pt-3  p-4 font-medium opacity-50 pr-20">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint consequatur dolor, debitis dignissimos
-                provident rerum voluptatum iste minus ex distinctio voluptate, maxime est obcaecati ea inventore a,
-                voluptatem asperiores sunt.
+                event delegation is about managing events more efficiently by using a parent element to handle events for multiple child elements.
             </p>
         </div>
 
@@ -74,12 +71,10 @@
         <!--  Question-4 -->
         <div class="mt-6 bg-white rounded-xl">
             <h1 class="font-bold pb-3 border-b-1 border-dashed border-gray-300 p-4 ">
-                Question-1: What are the different ways to select an element in the DOM?
+                Question-4: What is event bubbling in the DOM?
             </h1>
             <p class="pt-3  p-4 font-medium opacity-50 pr-20">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint consequatur dolor, debitis dignissimos
-                provident rerum voluptatum iste minus ex distinctio voluptate, maxime est obcaecati ea inventore a,
-                voluptatem asperiores sunt.
+                event bubbling is a built-in feature of the DOM where events propagate up the DOM tree from the target element to the root. This allows you to listen for events at higher levels in the DOM and handle them efficiently.
             </p>
         </div>
 
@@ -87,19 +82,17 @@
         <!--  Question-5 -->
         <div class="mt-6 bg-white rounded-xl">
             <h1 class="font-bold pb-3 border-b-1 border-dashed border-gray-300 p-4 ">
-                Question-1: What are the different ways to select an element in the DOM?
+                Question-5: How do you create, add, and remove elements using JavaScript?
             </h1>
             <p class="pt-3  p-4 font-medium opacity-50 pr-20">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint consequatur dolor, debitis dignissimos
-                provident rerum voluptatum iste minus ex distinctio voluptate, maxime est obcaecati ea inventore a,
-                voluptatem asperiores sunt.
+                Creating, adding, and removing elements using JavaScript is a common task when manipulating the DOM.Create an element using document.createElement(). / Add the element to the DOM using appendChild() or insertBefore(). / Remove an element using removeChild() or remove().
             </p>
         </div>
 
 
     </main>
     <footer>
-        
+
     </footer>
     <script src="js/mainToggle.js"></script>
 </body>
